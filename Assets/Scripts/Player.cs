@@ -8,17 +8,26 @@ public class Player : MonoBehaviour
 {
     
     private float _tiltAngle = 60.0f;
-    public FixedJoystick joystick;
     private Vector3 _direction;
-    public GameObject[] prefabArray;
+    
+    public int startAmountOfTarget = 20;
+    public FixedJoystick joystick;
+    public GameObject[] bulletPrefabArray;
     public Transform firePlace;
     private void Start()
     {
+        // Spawn start amount target
+        var startSpawner =  FindObjectOfType<LevelGenerator>();
+        for (int i = 0; i < startAmountOfTarget; i++)
+        {
+            startSpawner.SpawnTarget();
+        }
+        // get the joystick
         if (joystick == null)
         {
             joystick = FindObjectOfType<FixedJoystick>();
         }
-
+        
     }
 
     private void Update()
@@ -29,9 +38,10 @@ public class Player : MonoBehaviour
         transform.Rotate(Vector3.left*_direction.y,_tiltAngle*Time.deltaTime);
     }
 
+    // Method for create a bullet in fireplace 
     public void Fire()
     {
-        GameObject bullet = prefabArray[Random.Range(0, prefabArray.Length)];
+        GameObject bullet = bulletPrefabArray[Random.Range(0, bulletPrefabArray.Length)];
         Instantiate(bullet, firePlace.position, transform.rotation);
         
     }
