@@ -7,7 +7,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     
-    private float _tiltAngle = 60.0f;
+    private float _tiltAngle = 45.0f;
     private Vector3 _direction;
     
     public int startAmountOfTarget = 20;

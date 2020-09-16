@@ -246,7 +246,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: handleRange
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
@@ -256,7 +256,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: deadZone
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
@@ -673,7 +673,7 @@ MonoBehaviour:
   - {fileID: 5980297361387864113, guid: bf2e388121b2f134b87d1dc9c472f1d7, type: 3}
   - {fileID: 8932331259334320269, guid: 2afcc11ba03beda4f827dcd609b01d52, type: 3}
   - {fileID: 116689862841807392, guid: 7b99644961b8cf342879d73abcade938, type: 3}
-  distance: 5
+  distance: 10
 --- !u!4 &872423483
 Transform:
   m_ObjectHideFlags: 0

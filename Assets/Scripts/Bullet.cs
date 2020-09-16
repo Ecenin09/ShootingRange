@@ -7,8 +7,8 @@ public class Bullet : MonoBehaviour
     public GameObject particleObject;
     public float fireForce = 25.0f;
     public float timeFly = 10f;
-    public float blustRadius = 1f;
-    public float destroyRadius = 0.2f;
+    public float blustRadius = 2f;
+    public float destroyRadius = 1f;
     public float explosionForce = 10f;
     void Start()
     {
